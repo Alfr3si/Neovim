@@ -1,3 +1,4 @@
+return function()
 require("mason").setup({
     ui = {
         icons = {
@@ -7,3 +8,4 @@ require("mason").setup({
         },
     },
 })
+end

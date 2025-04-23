@@ -1,3 +1,4 @@
+return function()
 require('snacks').setup({
     dashboard = {
         preset = {
@@ -26,3 +27,4 @@ require('snacks').setup({
         },
     },
 })
+end

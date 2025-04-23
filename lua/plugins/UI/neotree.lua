@@ -1,3 +1,4 @@
+return function()
 ---@module "neo-tree"
 local neo_tree = require("neo-tree")
 
@@ -33,4 +34,4 @@ neo_tree.setup({
     },
   },
 })
-
+end

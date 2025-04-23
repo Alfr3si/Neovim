@@ -1,3 +1,4 @@
+return function()
 --my theme personalized of lualine
 local AlfTheme = {
     normal = {
@@ -85,3 +86,4 @@ require ("lualine").setup{
     tabline = {},
     extensions = {}
 }
+end

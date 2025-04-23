@@ -1,3 +1,4 @@
+return function()
 require('tabline').setup {
     options = {
         section_left = { 'buffers', 'close'},
@@ -13,3 +14,4 @@ require('tabline').setup {
     },
 
 }
+end

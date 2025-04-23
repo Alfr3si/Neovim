@@ -5,7 +5,7 @@ return{
         lazy = false,
         priority = 1000,
            config = function()
-            require("plugins.UI.colorscheme")
+            require("plugins.UI.colorscheme")()
         end
 
     },
@@ -13,13 +13,13 @@ return{
         "nvim-lualine/lualine.nvim",
         dependencies = {"nvim-tree/nvim-web-devicons"},
         config = function()
-            require("plugins.UI.lualine")
+            require("plugins.UI.lualine")()
         end
     },
     {
         "kdheepak/tabline.nvim",
         config = function()
-            require("plugins.UI.tabline")
+            require("plugins.UI.tabline")()
         end
     },
     {
@@ -27,7 +27,7 @@ return{
         priority = 1000,
         lazy = false,
         config = function()
-            require("plugins.UI.snacks")
+            require("plugins.UI.snacks")()
         end
     },
     {
@@ -40,7 +40,16 @@ return{
         },
         lazy = false,
         config = function()
-            require("plugins.UI.neotree")
+            require("plugins.UI.neotree")()
+        end
+    },
+    {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    config = function()
+        require("plugins.UI.ident")()
         end
     },
     {
@@ -54,7 +63,7 @@ return{
     {
         "lewis6991/gitsigns.nvim",
         config = function()
-            require("plugins.Code.gitsigns")
+            require("plugins.Code.gitsigns")()
         end
     },
     {
@@ -62,13 +71,13 @@ return{
         build = ":TSUpdate",
         event = "VeryLazy",
         config = function()
-            require("plugins.Code.treesitter")
+            require("plugins.Code.treesitter")()
         end
     },
     {
         "williamboman/mason.nvim",
         config = function()
-            require("plugins.Code.mason")
+            require("plugins.Code.mason")()
         end
     },
     --Edit this lines for add Server-Languages
@@ -76,7 +85,7 @@ return{
         "neovim/nvim-lspconfig",
         dependencies = { "williamboman/mason.nvim",},
         config = function()
-            require("plugins.Code.lsp")
+            require("plugins.Code.lsp")()
         end
     },
     {
@@ -107,7 +116,7 @@ return{
         dependencies = { { "echasnovski/mini.icons", opts = {} } },
         lazy = false,
         config = function()
-            require("plugins.Editor.oil")
+            require("plugins.Editor.oil")()
         end
     },
     {
@@ -119,7 +128,7 @@ return{
     },
         event = "VeryLazy",
         config = function()
-            require("plugins.Editor.telescope")
+            require("plugins.Editor.telescope")()
         end
     },
 }

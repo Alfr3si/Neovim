@@ -1,3 +1,4 @@
+return function()
 require("oil").setup({
     default_file_explorer = true,
     columns = {
@@ -22,3 +23,4 @@ require("oil").setup({
     },
     use_default_keymaps = true,
 })
+end

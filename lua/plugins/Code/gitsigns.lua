@@ -1,3 +1,4 @@
+return function()
 require('gitsigns').setup {
   signs = {
     add          = { text = '┃' },
@@ -59,3 +60,4 @@ vim.api.nvim_set_hl(0, 'GitSignsStagedChange', { fg = '#82fcca' })   -- Amarillo
 vim.api.nvim_set_hl(0, 'GitSignsStagedDelete', { fg = '#fc8288' })   -- Rojo más claro
 vim.api.nvim_set_hl(0, 'GitSignsStagedChangeDelete', { fg = '#FF92D0' }) -- Rosa más claro
 vim.api.nvim_set_hl(0, 'GitSignsStagedUntracked', { fg = '#A4FFFF' }) -- Azul más claro
+end
