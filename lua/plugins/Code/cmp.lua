@@ -26,6 +26,15 @@ function M.setup()
         luasnip.lsp_expand(args.body)
       end,
     },
+    window = {
+       completion = {
+        border = "rounded",
+       },
+       documentation = {
+         border = "rounded",
+       },
+    },
+
     mapping = {
       ["<C-d>"] = cmp.mapping.scroll_docs(-4),
       ["<C-f>"] = cmp.mapping.scroll_docs(4),
